@@ -8,11 +8,23 @@
 	<script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
 	<script defer src="script.js"></script>
 </head>
+
 <body>
-	<div id="message-container"></div>
-	<form id="send-container">
-		<input type="text" id="message-input">
-		<button type="submit" id="send-button">Send</button>
-	</form>
+	<div class="container">
+		<!-- List that can be used to show users online -->
+		<div class="people-list">
+			<input type="text" class="search" disabled>
+		</div>
+		<!-- Chat messages and form -->
+		<div class="chat-container">
+			<div id="message-container"></div>
+			<div class="send-container">
+				<form id="form-container">
+					<input type="text" id="message-input">
+					<button type="submit" id="send-button">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
